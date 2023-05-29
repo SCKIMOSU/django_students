@@ -16,9 +16,14 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 
+app_name="fbvApp"
+
+# "127.0.0.1:8000/fbvApp/student"
+# --> fbvApp:student
+
 urlpatterns = [
     path('admin/', admin.site.urls),
     #path('', include('fbvApp.urls')),
-    path('fbvApp/', include('fbvApp.urls')),
+    path('fbvApp/', include('fbvApp.urls'), name='fbvApp'),
     #path('cbvApp/', include('cbvApp.urls')),
 ]
