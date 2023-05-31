@@ -25,5 +25,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     #path('', include('fbvApp.urls')),
     path('fbvApp/', include('fbvApp.urls'), name='fbvApp'),
-    #path('cbvApp/', include('cbvApp.urls')),
+    path('cbvApp/', include('cbvApp.urls')),
 ]
